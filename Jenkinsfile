@@ -12,14 +12,14 @@ pipeline {
         stage ('Bulding docker docker image') {
             steps {
                 echo "build docker image"
-                sh 'docker build --no-cache -t saidevops94/repos .'
+                sh 'docker build --no-cache -t test .'
+                sh 'docker tag test:latest 195778983030.dkr.ecr.ap-south-1.amazonaws.com/test:latest'
             }
         }
-        stage ('Uploading to docker hub') {
+        stage ('Uploading to ECR') {
             steps {
-                echo "uploading to docker hub" 
-                sh 'docker login -u saidevops94 -p Sai@809969'
-                sh 'docker push saidevops94/repos:latest'
+                echo "uploading to ECR"
+                sh 'docker push 195778983030.dkr.ecr.ap-south-1.amazonaws.com/test:latest'
             }
         }
 
