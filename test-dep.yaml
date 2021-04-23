@@ -17,7 +17,7 @@ spec:
      spec:
        containers:
          - name: httpd2
-           image: saidevops94/repos:latest
+           image: 195778983030.dkr.ecr.ap-south-1.amazonaws.com/test:latest
            imagePullPolicy: "Always"
            ports:
            - containerPort: 80
