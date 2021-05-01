@@ -5,7 +5,7 @@ pipeline {
     stage ('git clone') {
             steps {
         echo "code is building"
-         git 'https://github.com/umahari/testing.git'
+         git 'https://github.com/mounika8500/demo-.git'
             }
         }
 
