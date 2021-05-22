@@ -18,7 +18,7 @@ spec:
      spec:
        containers:
          - name: httpd2
-           image: 195778983030.dkr.ecr.ap-south-1.amazonaws.com/test:latest
+           image: 156739282338.dkr.ecr.ap-south-1.amazonaws.com/sam:latest
            imagePullPolicy: "Always"
            ports:
            - containerPort: 80
