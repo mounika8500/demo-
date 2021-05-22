@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: httpd-deployment
-    namespace: food
+    namespace: my-demo
     labels:
       app: httpd2
 spec:
